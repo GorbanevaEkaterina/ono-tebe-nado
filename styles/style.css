@@ -1,82 +1,161 @@
 .header {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    padding: 0px 26px 0 26px;
-    margin-top: 92px;
-  }
-  
-  .header__menu {
-    flex-grow: 1;
-  }
-  
-  .header__menu-list {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  padding: 0px 26px 0 26px;
+  margin-top: 92px;
+  margin-bottom: 90px;
+}
+
+.header__menu {
+  flex-grow: 1;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.header__menu-item {
+  list-style: circle;
+  padding-right: 12px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.header__link_active {
+  border: none;
+}
+
+.header__logo {
+  display: block;
+  width: 138px;
+  margin-left: 5px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.contacts {
+  display: grid;
+  justify-items: end;
+  justify-content: center;
+}
+
+.contacts__menu-list {
+  width: 237px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  list-style: none;
+}
+
+.contacts__menu-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.contacts__menu-link {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.cover {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    font-size: 18px;
-  }
-  
-  .header__menu-item {
-    list-style: circle;
-    padding-right: 12px;
-  }
-  
-  .header__links-list-item_no-bullit {
-    list-style: none;
-  }
-  
-  .header__link {
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 1px solid #000000;
-    text-decoration: none;    
-    font-weight: 400;
-    letter-spacing: 0.01em;
-  }
-  
-  .header__link_active {
-    border: none;
-  }
-  
-  .header__logo {
-    display: block;
-    width: 138px;
-    margin-left: 5px;
-  }
-  
-  .header__logo-image {
+    height: 757px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.overlay { 
+    background-color: rgba(0, 0, 0, 0.6); 
     width: 100%;
-  }
-  
-  .contacts {
-    display: grid;
-    justify-items: end;
-    justify-content: center;
-  }
-  
-  .contacts__menu-list {
-    width: 237px;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    list-style: none;
-  }
-  
-  .contacts__menu-item {
-    font-style: normal;
+  height: 100%;
+}
+
+.cover__title {
+display: grid;
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 115%;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #FFFFFF;
+height: 355px;
+margin-top: 165px;
+margin-left: 50px;
+line-height: 1.22em;
+}
+
+.aligned-text {
+    display: inline-block;
+   letter-spacing: 0.6em;
+   text-align: left;
+}
+.aligned-text_center {
+    display: inline-block;
+    letter-spacing: 0.6em;
+    width: 369px;
+    text-align: center;
+    }
+.aligned-text_right {
+    display: block;
+    letter-spacing: 0.6em;
+    text-align: right;
+    width: 417px;
+}
+
+.no-letter-spacing {
+    text-align: end;
+}
+
+.cover__description {
+    display: flex;
+    align-items: center;
+    margin-top: 135px;
+    margin-left: 78px;
+    gap: 80px;
+
+}
+.cover__description-text {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-  }
-  
-  .contacts__menu-link {
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 1px solid #000000;
-  }
-  
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    word-spacing: 0.8em;
+   
+}
+    .bet-button {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 12px 32px 11px 31px;
+    background-color: inherit;
+    }
