@@ -96,46 +96,49 @@
 
 .cover__title {
 display: grid;
-font-style: normal;
+/* font-style: normal; */
 font-weight: 700;
 font-size: 100px;
 line-height: 115%;
 letter-spacing: 0.3em;
 text-transform: uppercase;
 color: #FFFFFF;
-height: 355px;
-margin-top: 165px;
-margin-left: 50px;
+/* height: 355px; */
+padding: 165px 50px 125px;
+/* margin-top: 165px;
+padding-left: 50px;
+padding-right: 50px; */
 line-height: 1.22em;
 }
 
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
+}
+
 .aligned-text {
-    display: inline-block;
-   letter-spacing: 0.6em;
+    display: block;
    text-align: left;
 }
 .aligned-text_center {
-    display: inline-block;
-    letter-spacing: 0.6em;
-    width: 369px;
+    display: block;
     text-align: center;
-    }
+  }
+
 .aligned-text_right {
     display: block;
-    letter-spacing: 0.6em;
     text-align: right;
-    width: 417px;
+    
 }
 
 .no-letter-spacing {
-    text-align: end;
+   letter-spacing: normal;
 }
 
 .cover__description {
     display: flex;
     align-items: center;
-    margin-top: 135px;
-    margin-left: 78px;
+    padding-left: 82px;
+    padding-right: 50px;
     gap: 80px;
 
 }
