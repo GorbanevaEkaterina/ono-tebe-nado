@@ -188,13 +188,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* width: 334px; */
   min-height: 563px;
-
-}
-.card_type_film,
-.card_type_book,
-.card_type_picture {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -241,7 +235,6 @@
 .card__text {
   display: flex;
   align-content: stretch;
-  min-height: 144px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 50px;
@@ -255,7 +248,8 @@
 
 .lots__look-more-link {
   display: block;
-  width: 192px;
+  max-width: 192px;
+  width: 100%;
   margin-top: 32px;
   margin-left: 40px;
   text-decoration: none;
@@ -321,7 +315,6 @@
   text-align: left;
   color: #000000;
 }
-
 
 .footer {
   display: flex;
