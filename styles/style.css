@@ -57,7 +57,8 @@
 }
 
 .contacts__menu-list {
-  width: 237px;
+  max-width: 237px;
+  width: 100%;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -79,14 +80,20 @@
 }
 
 .cover {
-  display: flex;
-  height: 757px;
+  position: relative;
+  z-index: 1;
+  padding: 166px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
@@ -99,7 +106,6 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 165px 50px 125px;
   line-height: 1.22em;
 }
 
@@ -129,8 +135,7 @@
 .cover__description {
   display: flex;
   align-items: center;
-  padding-left: 82px;
-  padding-right: 50px;
+  margin-top: 125px;
   gap: 80px;
 }
 
@@ -138,6 +143,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
+  padding-left: 30px;
   text-transform: uppercase;
   color: #ffffff;
   word-spacing: 0.8em;
@@ -177,6 +183,8 @@
 }
 
 .card {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width: 334px;
